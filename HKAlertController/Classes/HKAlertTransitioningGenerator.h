@@ -9,7 +9,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HKAlertTransitioningGenerator : NSObject
+typedef NS_ENUM(NSUInteger, HKAlertTransitioningType) {
+    HKAlertTransitioningTypePresent = 0,
+    HKAlertTransitioningTypeDismiss = 1,
+};
+
+typedef NS_ENUM(NSUInteger, HKAlertTransitioningStyle) {
+    HKAlertTransitioningStyleFadeInOut = 0,
+    
+    HKAlertTransitioningStyleDefault = HKAlertTransitioningStyleFadeInOut,
+};
+
+@interface HKAlertTransitioningGenerator : NSObject<UIViewControllerAnimatedTransitioning>
+
+@property (nonatomic, assign) HKAlertTransitioningType transitioningType;
+
+@property (nonatomic, assign) HKAlertTransitioningStyle transitioningStyle;
 
 @end
 
