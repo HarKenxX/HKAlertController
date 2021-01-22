@@ -41,7 +41,7 @@
 
 - (IBAction)horizontalButtonAlert:(id)sender {
     HKAlertController *alertController = [HKAlertController alertControllerWithTitle:@"Horizontal Alert"
-                                                                             message:@"Multi-Line Multi-Line\nMulti-Line Multi-Line\nMulti-Line Multi-Line\nMulti-Line Multi-Line"
+                                                                             message:@"Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line"
                                                                       preferredStyle:HKAlertViewStyleHorizontal];
     
     HKAlertAction *cancelAction = [HKAlertAction actionWithTitle:@"Cancel"
@@ -82,7 +82,7 @@
 
 - (IBAction)verticalButtonAlert:(id)sender {
     HKAlertController *alertController = [HKAlertController alertControllerWithTitle:@"Vertical Alert"
-                                                                             message:@"Multi-Line Multi-Line\nMulti-Line Multi-Line\nMulti-Line Multi-Line\nMulti-Line Multi-Line"
+                                                                             message:@"Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line Multi-Line"
                                                                       preferredStyle:HKAlertViewStyleVertical];
     
     HKAlertAction *cancelAction = [HKAlertAction actionWithTitle:@"Cancel"
