@@ -22,8 +22,9 @@ pod 'HKAlertController'
 
 ## Author
 
-haikun.xiu, haikun.xiu@shopee.com
+Harken, harkens@foxmail.com
 
 ## License
 
 HKAlertController is available under the MIT license. See the LICENSE file for more info.
+
