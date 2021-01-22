@@ -1,6 +1,8 @@
 PODS:
-  - HKAlertController (0.1.0)
+  - HKAlertController (0.1.0):
+    - Masonry
   - Kiwi (3.0.0)
+  - Masonry (1.1.0)
 
 DEPENDENCIES:
   - HKAlertController (from `../`)
@@ -9,15 +11,17 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Kiwi
+    - Masonry
 
 EXTERNAL SOURCES:
   HKAlertController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HKAlertController: e108917231f856a05b8471d3b99ef7b5e3c17c19
+  HKAlertController: a0e6a558d09449aad8c6390961eb91d6961c0482
   Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 8fd508ca4e4bbb55f16cc28eb8d1deb42cf63991
+PODFILE CHECKSUM: 519ccb1bdeacc9a89f8daf8b3bfdd7ecbe7d0c81
 
 COCOAPODS: 1.10.0

@@ -20,5 +20,10 @@
   },
   "source_files": "HKAlertController/Classes/**/*",
   "public_header_files": "Pod/Classes/**/*.h",
-  "frameworks": "UIKit"
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
 }
