@@ -121,11 +121,14 @@ const CGFloat kHKAlertContentOutsidePadding = 35.f;
     [self.class.alertWindow.rootViewController presentViewController:self animated:YES completion:nil];
 }
 
-- (void)dismiss {
-    __weak typeof(self) weakSelf = self;
-    [self dismissViewControllerAnimated:YES completion:^{
-        weakSelf.class.alertWindow.hidden = YES;
-    }];
++ (void)dismiss {
+    UIViewController *presentedController = self.alertWindow.rootViewController.presentedViewController;
+    if (presentedController) {
+        __weak typeof(self) weakSelf = self;
+        [presentedController dismissViewControllerAnimated:YES completion:^{
+            weakSelf.alertWindow.hidden = YES;
+        }];
+    }
 }
 
 #pragma mark - Handler Functions
