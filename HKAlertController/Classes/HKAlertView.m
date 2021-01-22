@@ -12,8 +12,6 @@
 const NSInteger kHKAlertHorizontalButtonMax = 2;
 const NSInteger kHKAlertVerticalButtonMax = 4;
 
-const CGFloat kHKAlertContentRadius = 8.f;
-const CGFloat kHKAlertContentOutsidePadding = 35.f;
 const CGFloat kHKAlertContentInsidePadding = 16.f;
 const CGFloat kHKAlertContentTopPadding = 28.f;
 const CGFloat kHKAlertContentBottomPadding = 20.f;

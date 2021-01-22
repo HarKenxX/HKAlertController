@@ -22,6 +22,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		814A4745FB8A8969255E19F4 /* libPods-HKAlertController_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 102276FB6E7B2C83356DC965 /* libPods-HKAlertController_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8CB35B3225BADF6800F4691E /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB35B3125BADF6800F4691E /* HKViewController.m */; };
 		B1521173697832B179DA9251 /* libPods-HKAlertController_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF12D04BF261D8241CA7E5E6 /* libPods-HKAlertController_Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83CDCE4BD064E74CFA449AA1 /* Pods-HKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-HKAlertController_Example/Pods-HKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CB35B3025BADF6800F4691E /* HKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		8CB35B3125BADF6800F4691E /* HKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
 		9724DE8E87849609CBA607FD /* HKAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HKAlertController.podspec; path = ../HKAlertController.podspec; sourceTree = "<group>"; };
 		9B113D681DD13489F83E041E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BFE126DF7A85D4EFEEAB7A27 /* Pods-HKAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKAlertController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HKAlertController_Tests/Pods-HKAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 			children = (
 				6003F59C195388D20070C39A /* HKAppDelegate.h */,
 				6003F59D195388D20070C39A /* HKAppDelegate.m */,
+				8CB35B3025BADF6800F4691E /* HKViewController.h */,
+				8CB35B3125BADF6800F4691E /* HKViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -241,6 +246,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = haikun.xiu;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = XE8833VJ6Y;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -340,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB35B3225BADF6800F4691E /* HKViewController.m in Sources */,
 				6003F59E195388D20070C39A /* HKAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -469,6 +478,7 @@
 			baseConfigurationReference = 83CDCE4BD064E74CFA449AA1 /* Pods-HKAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XE8833VJ6Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HKAlertController/HKAlertController-Prefix.pch";
 				INFOPLIST_FILE = "HKAlertController/HKAlertController-Info.plist";
@@ -476,6 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -485,6 +496,7 @@
 			baseConfigurationReference = 421362F5DD1CD78C7E3EA854 /* Pods-HKAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XE8833VJ6Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HKAlertController/HKAlertController-Prefix.pch";
 				INFOPLIST_FILE = "HKAlertController/HKAlertController-Info.plist";
@@ -492,6 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

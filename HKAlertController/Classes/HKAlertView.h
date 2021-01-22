@@ -6,14 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HKAlertController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-/// alert view style
-typedef NS_ENUM(NSInteger, HKAlertViewStyle) {
-    HKAlertViewStyleHorizontal   = 0,
-    HKAlertViewStyleVertical     = 1,
-};
 
 @class HKAlertAction;
 

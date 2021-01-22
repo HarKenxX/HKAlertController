@@ -33,6 +33,7 @@ typedef NS_ENUM(NSUInteger, HKAlertActionStyle) {
                         handler:(nullable HKAlertActionHandler)handler;
 
 @property (nonatomic, copy, nullable, readonly) NSString *title;
+@property (nonatomic, copy, nullable, readonly) HKAlertActionHandler handler;
 
 @property (nonatomic, assign, readonly) HKAlertActionStyle style;
 @property (nonatomic, assign, getter=isEnabled) BOOL enabled;
