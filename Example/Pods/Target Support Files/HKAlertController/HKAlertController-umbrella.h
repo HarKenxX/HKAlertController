@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "HKAlertAction.h"
+#import "HKAlertController.h"
+#import "HKAlertTransitioningGenerator.h"
+#import "HKAlertView.h"
 
 FOUNDATION_EXPORT double HKAlertControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char HKAlertControllerVersionString[];

@@ -1,22 +1,24 @@
 {
   "name": "HKAlertController",
   "version": "0.1.0",
-  "summary": "A short description of HKAlertController.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/haikun.xiu/HKAlertController",
+  "summary": "Alert Controller Fully Customized.",
+  "description": "Alert controller fully customized.\n* Support Window Level Show and Dismiss.\n* Support Horizontal and Vertical UI Layout.\n* Support Animations Extend. (Default is FadeInOut.)",
+  "homepage": "https://github.com/HarkenxX/HKAlertController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "haikun.xiu": "haikun.xiu@shopee.com"
+    "harken": "harkenx@foxmail.com"
   },
   "source": {
-    "git": "https://github.com/haikun.xiu/HKAlertController.git",
+    "git": "https://github.com/HarkenxX/HKAlertController.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "HKAlertController/Classes/**/*"
+  "source_files": "HKAlertController/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit"
 }

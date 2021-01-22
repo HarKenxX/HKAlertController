@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## HKAlertController
 
-Copyright (c) 2021 haikun.xiu <haikun.xiu@shopee.com>
+Copyright (c) 2021 harken <harkenx@foxmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HKAlertController: 45b2e428ad3f55bbdb544368d32d5b489b447373
+  HKAlertController: e108917231f856a05b8471d3b99ef7b5e3c17c19
   Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
 
 PODFILE CHECKSUM: 8fd508ca4e4bbb55f16cc28eb8d1deb42cf63991
