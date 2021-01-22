@@ -22,7 +22,7 @@ pod 'HKAlertController'
 
 ## Author
 
-Harken, harkens@foxmail.com
+Harken, harkenx@foxmail.com
 
 ## License
 
