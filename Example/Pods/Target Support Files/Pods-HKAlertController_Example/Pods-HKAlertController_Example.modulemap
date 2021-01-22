@@ -1,0 +1,6 @@
+framework module Pods_HKAlertController_Example {
+  umbrella header "Pods-HKAlertController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module HKAlertController {
+  umbrella header "HKAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}

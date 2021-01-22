@@ -1,0 +1,23 @@
+PODS:
+  - HKAlertController (0.1.0)
+  - Kiwi (3.0.0)
+
+DEPENDENCIES:
+  - HKAlertController (from `../`)
+  - Kiwi
+
+SPEC REPOS:
+  trunk:
+    - Kiwi
+
+EXTERNAL SOURCES:
+  HKAlertController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HKAlertController: 45b2e428ad3f55bbdb544368d32d5b489b447373
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+
+PODFILE CHECKSUM: 8fd508ca4e4bbb55f16cc28eb8d1deb42cf63991
+
+COCOAPODS: 1.10.0
