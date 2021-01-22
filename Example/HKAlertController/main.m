@@ -2,8 +2,8 @@
 //  main.m
 //  HKAlertController
 //
-//  Created by haikun.xiu on 01/19/2021.
-//  Copyright (c) 2021 haikun.xiu. All rights reserved.
+//  Created by Harken on 01/19/2021.
+//  Copyright (c) 2021 Harken. All rights reserved.
 //
 
 @import UIKit;

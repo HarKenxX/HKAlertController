@@ -3,7 +3,7 @@
 //  HKAlertController_Example
 //
 //  Created by Harken on 2021/1/22.
-//  Copyright © 2021 haikun.xiu. All rights reserved.
+//  Copyright © 2021 Harken. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
