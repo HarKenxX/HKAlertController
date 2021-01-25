@@ -16,11 +16,20 @@ typedef NS_ENUM(NSInteger, HKAlertViewStyle) {
     HKAlertViewStyleVertical     = 1,
 };
 
+/// alert priority (high priority will replace low priority).
+/// @note using priority is recommendation, using number is ok, priority is decided by number size
+typedef NS_ENUM(NSInteger, HKAlertPriority) {
+    HKAlertPriorityLow           = NSIntegerMin,
+    HKAlertPriorityDefault       = 0,
+    HKAlertPriorityHigh          = NSIntegerMax,
+};
+
 @interface HKAlertController : UIViewController
 
 @property (nonatomic, copy, nullable) NSString *title;
 @property (nonatomic, copy, nullable) NSString *message;
 
+@property (nonatomic, assign) HKAlertPriority preferredPriority;
 @property (nonatomic, assign, readonly) HKAlertViewStyle preferredStyle;
 
 @property (nonatomic, copy, readonly) NSArray<HKAlertAction *> *actions;
@@ -30,7 +39,7 @@ typedef NS_ENUM(NSInteger, HKAlertViewStyle) {
 /// @param message alert message
 /// @param preferredStyle alert preferred style
 + (instancetype)alertControllerWithTitle:(nullable NSString *)title
-                                 message:(nullable NSString *)message
+                                 message:(NSString *)message
                           preferredStyle:(HKAlertViewStyle)preferredStyle;
 
 /// add action to alert controller

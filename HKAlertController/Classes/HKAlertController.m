@@ -38,6 +38,7 @@ const CGFloat kHKAlertContentOutsidePadding = 35.f;
 {
     self = [super init];
     if (self) {
+        self.preferredPriority = HKAlertPriorityDefault;
         self.modalPresentationStyle = UIModalPresentationCustom;
         self.transitioningDelegate = self;
     }
@@ -45,7 +46,7 @@ const CGFloat kHKAlertContentOutsidePadding = 35.f;
 }
 
 + (instancetype)alertControllerWithTitle:(nullable NSString *)title
-                                 message:(nullable NSString *)message
+                                 message:(nonnull NSString *)message
                           preferredStyle:(HKAlertViewStyle)preferredStyle {
     HKAlertController *alertController = [[HKAlertController alloc] init];
     alertController.title = title;
@@ -111,9 +112,15 @@ const CGFloat kHKAlertContentOutsidePadding = 35.f;
 
 - (void)show {
     UIViewController *presentedController = self.class.alertWindow.rootViewController.presentedViewController;
-    if (presentedController) {
-        /// dismiss last alert controller
-        [presentedController dismissViewControllerAnimated:NO completion:nil];
+    if ([presentedController isKindOfClass:HKAlertController.class]) {
+        HKAlertController *alertController = (HKAlertController *)presentedController;
+        if (alertController.preferredPriority > self.preferredPriority) {
+            /// if alert controller presented is higher priority than alert controller will present, then cancel
+            return;
+        }
+        
+        /// dismiss lower alert controller
+        [alertController dismissViewControllerAnimated:NO completion:nil];
     }
     
     self.class.alertWindow.rootViewController = [[UIViewController alloc] init];

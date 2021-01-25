@@ -22,8 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, nullable) void (^actionButtonDidClick)(NSUInteger index);
 
-- (void)resetWithTitle:(NSString *)title
-               message:(nullable NSString *)message
+- (void)resetWithTitle:(nullable NSString *)title
+               message:(NSString *)message
                actions:(nullable NSArray<HKAlertAction *> *)actions;
 
 @end

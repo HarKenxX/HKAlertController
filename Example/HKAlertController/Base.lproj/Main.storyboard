@@ -20,36 +20,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-f8-Fud">
-                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
-                                <state key="normal" title="单一按钮"/>
+                                <rect key="frame" x="117" y="318.5" width="141" height="30"/>
+                                <state key="normal" title="Toast - Auto Dismiss"/>
                                 <connections>
                                     <action selector="oneButtonAlert:" destination="whP-gf-Uak" eventType="touchUpInside" id="39o-pn-Vu5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8H-Ax-P0i">
-                                <rect key="frame" x="156.5" y="378.5" width="62" height="30"/>
-                                <state key="normal" title="纵向按钮"/>
+                                <rect key="frame" x="116.5" y="378.5" width="142" height="30"/>
+                                <state key="normal" title="Vertical - Mutli - Left"/>
                                 <connections>
                                     <action selector="verticalButtonAlert:" destination="whP-gf-Uak" eventType="touchUpInside" id="IT0-VY-Fw5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83E-2t-xxq">
-                                <rect key="frame" x="156.5" y="258.5" width="62" height="30"/>
-                                <state key="normal" title="横向按钮"/>
+                                <rect key="frame" x="107.5" y="258.5" width="160" height="30"/>
+                                <state key="normal" title="Horizontal - Mutli - Left"/>
                                 <connections>
                                     <action selector="horizontalButtonAlert:" destination="whP-gf-Uak" eventType="touchUpInside" id="EHD-SW-tGc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPI-oM-f1R">
-                                <rect key="frame" x="134" y="198.5" width="107" height="30"/>
-                                <state key="normal" title="横向按钮 - 居中"/>
+                                <rect key="frame" x="95" y="198.5" width="185" height="30"/>
+                                <state key="normal" title="Horizontal - Single- Center"/>
                                 <connections>
                                     <action selector="horizontalButtonAlertCenter:" destination="whP-gf-Uak" eventType="touchUpInside" id="VAP-ko-0AC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laV-bo-aBI">
-                                <rect key="frame" x="134" y="438.5" width="107" height="30"/>
-                                <state key="normal" title="纵向按钮 - 居中"/>
+                                <rect key="frame" x="102.5" y="438.5" width="170" height="30"/>
+                                <state key="normal" title="Vertical - Single - Center"/>
                                 <connections>
                                     <action selector="verticalButtonAlertCenter:" destination="whP-gf-Uak" eventType="touchUpInside" id="nQe-EW-B71"/>
                                 </connections>

@@ -157,8 +157,8 @@ const CGFloat kHKAlertButtonHeight = 36.f;
     }
 }
 
-- (void)resetWithTitle:(nonnull NSString *)title
-               message:(nullable NSString *)message
+- (void)resetWithTitle:(nullable NSString *)title
+               message:(nonnull NSString *)message
                actions:(nullable NSArray<HKAlertAction *> *)actions {
     self.titleLabel.text = title;
     self.messageLabel.text = message;
